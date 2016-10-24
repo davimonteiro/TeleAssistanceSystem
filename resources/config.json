@@ -1,0 +1,19 @@
+{
+  "name": "config",
+  "traceFile": "/Users/davimonteiro/Desktop/LoTuS files/traces.csv",
+  "projectFile": "/Users/davimonteiro/Desktop/LoTuS files/TeleAssisteance.xml",
+  "properties": [ {
+		"id": 1,
+		"sourceStateId": 0,
+		"targetStateId": 5,
+		"conditionalOperator": "LESS_THAN",
+		"probability": 0.2
+    }, {
+		"id": 2,
+		"sourceStateId": 0,
+		"targetStateId": 11,
+		"conditionalOperator": "LESS_THAN",
+		"probability": 0.1
+	}
+  ]
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="1.0" name="TeleAssisteance">
+	<component name="Component1">
+		<states>
+			<state id="0" x="17.0" y="234.0" label="0" initial="true">
+			</state>
+			<state id="1" x="118.95000164794932" y="233.80190776973967" label="1">
+			</state>
+			<state id="2" x="322.0" y="301.0" label="2" final="true">
+			</state>
+			<state id="3" x="373.22000164794935" y="136.79190776973965" label="3">
+			</state>
+			<state id="4" x="260.0" y="59.0" label="4">
+			</state>
+			<state id="5" x="414.36000164794933" y="59.35190776973964" label="5">
+			</state>
+			<state id="6" x="118.95000164794932" y="115.22190776973966" label="6">
+			</state>
+			<state id="7" x="343.0" y="232.0" label="7">
+			</state>
+			<state id="8" x="489.0" y="233.0" label="8">
+			</state>
+			<state id="9" x="649.0" y="233.0" label="9">
+			</state>
+			<state id="10" x="640.0" y="328.0" label="10">
+			</state>
+			<state id="11" x="844.0" y="233.0" label="11">
+			</state>
+		</states>
+		<transitions>
+			<transition from="0" to="1" prob="1.0" label="start" view-type="0">
+			</transition>
+			<transition from="1" to="2" prob="0.1179313678105365" label="stopMsg" view-type="0">
+			</transition>
+			<transition from="1" to="3" prob="0.053165780570323826" label="pButtonMsg" view-type="0">
+			</transition>
+			<transition from="3" to="4" prob="1.0" label="alarm" view-type="0">
+			</transition>
+			<transition from="4" to="5" prob="0.18664643399089528" label="failedAlarm" view-type="0">
+			</transition>
+			<transition from="4" to="6" prob="0.8133535660091047" label="callFAS" view-type="0">
+			</transition>
+			<transition from="1" to="7" prob="0.8289028516191397" label="vitalParamMsg" view-type="0">
+			</transition>
+			<transition from="7" to="8" prob="1.0" label="analyzeData" view-type="0">
+			</transition>
+			<transition from="8" to="3" prob="0.3204903677758319" label="sendAlarm" view-type="0">
+			</transition>
+			<transition from="8" to="9" prob="0.3280793928779918" label="changeDrug" view-type="0">
+			</transition>
+			<transition from="6" to="1" prob="1.0" label="attendToPA" view-type="0">
+			</transition>
+			<transition from="9" to="1" prob="1.0" label="notifyPA" view-type="1">
+			</transition>
+			<transition from="5" to="5" prob="1.0" label="failure" view-type="1">
+			</transition>
+			<transition from="2" to="2" prob="1.0" label="exit" view-type="1">
+			</transition>
+			<transition from="9" to="11" prob="0.0" label="failedChangeDrug" view-type="0">
+			</transition>
+			<transition from="10" to="11" prob="0.0" label="failedChangeDoses" view-type="0">
+			</transition>
+			<transition from="8" to="11" prob="0.0" label="failedAnalyses" view-type="1">
+			</transition>
+			<transition from="11" to="11" prob="1.0" label="failure" view-type="0">
+			</transition>
+			<transition from="8" to="10" prob="0.3514302393461763" label="changeDoses" view-type="0">
+			</transition>
+			<transition from="10" to="1" prob="1.0" label="notifyPA" view-type="1">
+			</transition>
+		</transitions>
+	</component>
+</project>
